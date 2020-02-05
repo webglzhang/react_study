@@ -10,7 +10,7 @@ module.exports = {
     output: {
         filename: "server-entry.js",
         path: path.join(__dirname, '../dist'),
-        publicPath: "./public",
+        publicPath: "/public",
         //模块加载方案 umd amd
         libraryTarget: "commonjs2"
     },

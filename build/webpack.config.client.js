@@ -13,7 +13,7 @@ const config = {
         filename: "[name].[hash].js",
         path: path.join(__dirname, '../dist'),//? 绝对路径
         //静态文件生成路径
-        publicPath: "/public"
+        publicPath: "/public/"
     },
     module: {
         rules: [
@@ -56,7 +56,7 @@ if (isDev) {
             errors: true
         },
         //错误返回
-        publicPath: '/public',
+        publicPath: '/public/',
         historyApiFallback: {
             index: '/public/index.html'
         },

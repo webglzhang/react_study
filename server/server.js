@@ -7,7 +7,7 @@ const dev = process.env.NODE_ENV = 'development';
 const app = express();
 
 if (!dev) {
-
+    
     const severEntry = require("../dist/server-entry").default;
     const template = fs.readFileSync(path.join(__dirname, "../dist/index.html"), "utf8");
 

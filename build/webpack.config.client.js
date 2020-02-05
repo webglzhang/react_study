@@ -18,6 +18,14 @@ const config = {
     module: {
         rules: [
             {
+                enforce: "pre",
+                test:/.(js|jsx)$/,
+                loader: "eslint-loader",
+                exclude:[
+                    path.join(__dirname, '../node_modules')
+                ]
+            },
+            {
                 test: /.jsx$/,
                 loader: 'babel-loader'
             },

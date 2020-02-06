@@ -1,6 +1,9 @@
 const path = require('path');
 
 module.exports = {
+  resolve: {
+    extensions: ['.js','.jsx']
+  },
   output: {
     path: path.join(__dirname, '../dist'),//? 绝对路径
     //静态文件生成路径
